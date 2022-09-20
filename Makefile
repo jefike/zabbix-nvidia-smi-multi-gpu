@@ -8,7 +8,7 @@ install: install-agent-config install-script
 
 install-agent-config:
 	install -o root -g root -m 644 userparameter_nvidia-smi.conf.linux \
-		/etc/zabbix/zabbix_agentd.d/userparameter_nvidia-smi.conf
+		/etc/zabbix/zabbix_agentd.conf.d/userparameter_nvidia-smi.conf
 
 install-script:
 	install -d -o root -g root -m 755 /etc/zabbix/scripts
